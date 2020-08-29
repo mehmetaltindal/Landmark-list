@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/display"
+        android:layout_width="335dp"
+        android:layout_height="310dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLandmarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textLandmarks"
+        android:layout_width="286dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Landmark Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textCountry"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Country Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
